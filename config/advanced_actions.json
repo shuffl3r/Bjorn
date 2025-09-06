@@ -1,0 +1,32 @@
+[
+  {
+    "b_module": "intelligent_targeting",
+    "b_class": "IntelligentTargeting",
+    "b_port": 0,
+    "b_parent": null,
+    "b_priority": 0,
+    "b_description": "AI-driven target prioritization and attack orchestration engine",
+    "b_enabled": true,
+    "b_standalone": true
+  },
+  {
+    "b_module": "masscan_scanner",
+    "b_class": "MasscanScanner",
+    "b_port": 0,
+    "b_parent": null,
+    "b_priority": 1,
+    "b_description": "High-speed network scanner using Masscan for 1000x faster scanning",
+    "b_enabled": true,
+    "b_standalone": false
+  },
+  {
+    "b_module": "advanced_vuln_scanner",
+    "b_class": "AdvancedVulnScanner",
+    "b_port": 0,
+    "b_parent": "MasscanScanner",
+    "b_priority": 2,
+    "b_description": "Advanced vulnerability scanner with real-time CVE database integration",
+    "b_enabled": true,
+    "b_standalone": false
+  }
+]
